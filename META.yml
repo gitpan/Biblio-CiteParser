@@ -1,0 +1,29 @@
+--- #YAML:1.0
+name: Biblio-CiteParser
+version: 1.10
+license: gpl
+distribution_type: module
+requires:
+  Text::Unidecode: 0
+  URI: 0
+recommends:
+  SOAP::Lite: 0
+  URI::OpenURL: 0
+build_requires: {}
+conflicts: {}
+provides:
+  Biblio::CiteParser:
+    file: lib/Biblio/CiteParser.pm
+    version: 1.10
+  Biblio::CiteParser::Jiao:
+    file: lib/Biblio/CiteParser/Jiao.pm
+  Biblio::CiteParser::Jiao::Utility:
+    file: lib/Biblio/CiteParser/Jiao/Utility.pm
+    version: 0.01
+  Biblio::CiteParser::Standard:
+    file: lib/Biblio/CiteParser/Standard.pm
+  Biblio::CiteParser::Templates:
+    file: lib/Biblio/CiteParser/Templates.pm
+  Biblio::CiteParser::Utils:
+    file: lib/Biblio/CiteParser/Utils.pm
+generated_by: Module::Build version 0.19
